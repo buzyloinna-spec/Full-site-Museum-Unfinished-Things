@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Museum of Unfinished Things</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Fragment+Mono&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="title intro" id="intro" aria-label="Museum of Unfinished Things">
+  <div class="slogan" id="slogan" aria-label="Not every unfinished thing is a failure. Not every finished thing is a success.">
+    <p class="sl" data-t="Not every unfinished thing is a failure."></p>
+    <p class="sl" data-t="Not every finished thing is a success."></p>
+  </div>
+  <div class="bar mono"><span class="ash">Have you left anything unfinished?</span><span class="ash">[00] Opening</span><span class="ash">An exhibition in fragments</span></div>
+  <h1><span class="l1">Museum of</span><span class="l2">Unfinished</span><span class="l3">Things<span class="cursor" aria-hidden="true"></span></span></h1>
+  <div class="foot"><span></span><span class="enter">Room 01 ↓</span></div>
+  <button class="skip mono" id="skip" type="button">Skip intro</button>
+</section>
+
+<div class="room0-wrap" id="wrap00"><section class="room0" id="room00" aria-label="Exhibit 01 — Jane Austen, Sanditon">
+  <div class="bar mono"><span>[01] Exh. 01 — Jane Austen</span></div>
+
+  <figure class="ms" id="aFirst"><img src="images/austen-first.jpg" alt="The first page of the Sanditon manuscript, dated 27 January 1817."></figure>
+  <figure class="ms" id="aLast"><img src="images/austen-last.jpg" alt="The last written pages of the Sanditon manuscript, next to a blank page."></figure>
+  <figure class="ms portrait" id="aPortrait"><img src="images/austen-portrait.jpg" alt="Portrait of Jane Austen."></figure>
+
+  <div class="a-copy" id="aT1"><span class="mono">First page</span><p class="wall-d">27 January 1817.</p><p class="sub">Jane Austen begins a new novel.</p></div>
+  <div class="a-copy" id="aT2"><span class="mono">Last page</span><p class="wall-d">18 March 1817.</p><p class="sub">She writes 11½ chapters — and stops.<br>After that, the page is blank.</p></div>
+
+  <div class="a-copy a-label" id="aLabel">
+    <span class="who">Jane Austen</span>
+    <h2>Sanditon</h2>
+    <p class="by">1817 · manuscript</p>
+    <dl class="meta">
+      <dt>Written</dt><dd>11½ chapters</dd>
+      <dt>Manuscript</dt><dd>King’s College, Cambridge</dd>
+      <dt>Kind</dt><dd>Cut short</dd>
+    </dl>
+  </div>
+
+  <div class="a-copy" id="aT3"><span class="mono">18 July 1817</span><p class="wall-d">Four months later, she was gone.</p><p class="sub">We literally hold her last written pages.</p></div>
+
+  <div class="a-copy a-story" id="aStory">
+    <span class="who">Jane Austen · 1775–1817</span>
+    <h3>Unfinished — and still loved.</h3>
+    <p class="lead">The manuscript is kept at King’s College, Cambridge, and Cambridge has digitised it — anyone can turn its pages.</p>
+    <p class="lead">Because the text has long been in the public domain, others have finished Sanditon: “Another Lady” (Marie Dobbs, 1975), Julia Barrett and many more. The cover still says “Jane Austen” in large letters.<br>The co-author is credited below.</p>
+    <p class="lead">After the British TV series Sanditon (2019), interest flared up again: the book is reprinted, often with a film cover.</p>
+    <p class="q">Death stopped her. But the novel lives on — in other hands.</p>
+  </div>
+  <figure class="ms nb" id="aNotebooks"><img src="images/austen-notebooks.jpg" alt="The Sanditon manuscript notebooks."></figure>
+  <span class="nb-cap mono ash" id="aNbCap">The Sanditon manuscript notebooks</span>
+
+  <span class="progress mono" id="progress0">Room 01 — 0%</span>
+</section></div>
+
+<div class="room2-wrap" id="wrap02"><section class="room2" id="room02" aria-label="Exhibit 02 — Michelangelo, Rondanini Pietà">
+  <div class="bar mono" style="display:flex;justify-content:space-between;padding-block:22px 18px;border-bottom:1px solid #fff;color:#fff"><span>[02] Exh. 02 — Michelangelo</span></div>
+
+  <figure class="sculpt" id="sculpt">
+    <img class="s-close" src="images/pieta-close.jpg" alt="Rondanini Pietà: the legs of Christ and, to the left, the detached arm from the first version.">
+    <img class="s-main" src="images/pieta.jpg" alt="Michelangelo, Rondanini Pietà, marble, in its room at the Castello Sforzesco, Milan." onerror="this.parentNode.classList.add('no-img')">
+  </figure>
+
+  <div class="cap wall" id="cap1"><span class="mono">Exhibit 02</span><p>He changed his mind.</p></div>
+  <div class="cap wall" id="cap2"><span class="mono">Exhibit 02</span><p>And changed it again.</p></div>
+
+  <div class="copy t2-label fx" id="t2Label">
+    <span class="who">Michelangelo</span>
+    <h2 style="margin-top:10px">Rondanini Pietà</h2>
+    <p class="by">1552–1564</p>
+    <p class="kind"><span class="mono">Kind</span>Search</p>
+  </div>
+
+  <div class="copy t2-story fx" id="t2Story">
+    <h3>Death stopped Austen.<br><span class="nw">Michelangelo stopped himself.</span></h3>
+    <p class="lead">The great Renaissance sculptor, maker of the David, spent his life in pursuit of the perfect human body. He carved this Pietà — Mary holding the dead Christ — until his last days.</p>
+    <p class="lead">He had already carved part of the figures; years later he began cutting away what he had made, to find another sculpture in the same stone.<br>The bodies became elongated, almost bodiless. Christ’s right arm remains from the first version.</p>
+    <p class="q">A master of perfection ends his life with a work that looks imperfect.</p>
+  </div>
+
+  <span class="progress mono fx" id="progress2">Room 02 — 0%</span>
+</section></div>
+<div class="room-wrap" id="wrap01"><section class="room" id="room01" aria-label="Exhibit 03 — Keith Haring, Unfinished Painting">
+  <div class="band" id="band1" aria-hidden="true"></div>
+  <div class="bar mono fx" style="justify-content:flex-end"><span>[03] Exh. 03 — Keith Haring</span></div>
+
+  <figure class="painting" id="painting">
+    <img src="images/haring.jpg" alt="Keith Haring, Unfinished Painting, 1989: violet lines fill the upper-left corner and drip down; the rest of the canvas is empty." onerror="this.parentNode.classList.add('no-img')">
+    <span class="missing mono ash">Image: Unfinished Painting, 1989</span>
+  </figure>
+
+  <div class="copy t-intro fx" id="tIntro">
+    <span class="mono ash">Exhibit 03</span>
+    <p>This painting was not cut short.<br>It was left empty<br>on purpose.</p>
+  </div>
+
+  <div class="copy t-label fx" id="tLabel">
+    <h2>Unfinished Painting</h2>
+    <p class="by">Keith Haring, 1989</p>
+    <dl class="meta">
+      <dt>Exhibit</dt><dd>03</dd>
+      <dt>Medium</dt><dd>Acrylic on canvas</dd>
+      <dt>Size</dt><dd>c. 100 × 100 cm</dd>
+      <dt>Empty</dt><dd>About three quarters of the canvas</dd>
+      <dt>Kind</dt><dd>Protest</dd>
+    </dl>
+  </div>
+
+  
+
+  <div class="conclusion" id="concl"><span class="mono">A harder question</span><p><span class="ln">Are we looking at an unfinished painting —</span> <span class="ln">or a finished painting about unfinishedness?</span></p></div>
+
+  <div class="copy t-why fx" id="tWhy">
+    <span class="mono ash">Why the emptiness</span>
+    <h3>The emptiness here is not a lack of time but a statement.</h3>
+    <ol class="why-list">
+      <li><span class="mono">01</span><div><b>Lives cut short.</b> In 1988 Haring learned he had AIDS. The white field stands for thousands of lives, projects and dreams the epidemic cut off mid-sentence.</div></li>
+      <li><span class="mono">02</span><div><b>Silence.</b> Haring was an activist, and in those same years he made “Silence = Death” posters. The emptiness is often read as a reproach to those who kept silent about the epidemic.</div></li>
+      <li><span class="mono">03</span><div><b>His own ending.</b> The pattern fills only the upper-left corner, and the paint drips down — like the artist’s own unfinished path.</div></li>
+    </ol>
+  </div>
+  <span class="hint mono ash fx" id="hint">Scroll ↓</span>
+  <span class="progress mono fx" id="progress">Room 03 — 0%</span>
+</section></div>
+
+
+<!-- 03 · Reflection: the question, three possible answers, then the museum's answer -->
+<div class="why-wrap" id="wrapWhy"><section class="why" id="stage" aria-label="Have you left anything unfinished?">
+  <span class="mono ash tag">[03] Reflection</span>
+  <p class="why-q" id="whyQ">Have you left<br>anything unfinished?<span class="cursor" aria-hidden="true"></span></p>
+  <p class="ghostline mq" id="m1"><span class="mb">Maybe</span><span class="gt">you should finish it.</span></p>
+  <p class="ghostline mq" id="m2"><span class="mb">Maybe</span><span class="gt">you have outgrown it.</span></p>
+  <p class="ghostline mq" id="m3"><span class="mb">Maybe</span><span class="gt">it was never meant to end.</span></p>
+  <div class="ans" id="ans">
+    <p class="ans1">The museum doesn’t<br>have the answer.</p>
+    <p class="ans2">It only <span class="door">opens the door</span> to search.<span class="cursor" aria-hidden="true"></span></p>
+  </div>
+  <button class="mono skip st-skip" id="stSkip" type="button">Skip →</button>
+</section></div>
+
+<!-- 04 · This is not the museum (orange 40 %) -->
+<section class="orange list-sec" aria-label="Three of many">
+  <div class="bar mono"><span>[04] Collection</span></div>
+  <h2 class="two">Three of many.</h2>
+  <p class="two-sub">Each story is its own kind of unfinished.</p>
+  <ol class="coll">
+    <li class="head"><span class="mono">№</span><span class="mono">Author</span><span class="mono">Work</span><span class="mono">Kind</span></li>
+    <li><span class="mono">01</span><span>Jane Austen</span><span class="w">Sanditon</span><span class="k">Cut short</span></li>
+    <li><span class="mono">02</span><span>Michelangelo</span><span class="w">Rondanini Pietà</span><span class="k">Search</span></li>
+    <li><span class="mono">03</span><span>Keith Haring</span><span class="w">Unfinished Painting</span><span class="k">Protest</span></li>
+    <li class="ghost" style="--o:.34"><span class="mono">04</span><i style="width:24%"></i><i style="width:28%"></i><i style="width:52%"></i></li>
+    <li class="ghost" style="--o:.22"><span class="mono">05</span><i style="width:14%"></i><i style="width:40%"></i><i style="width:30%"></i></li>
+    <li class="ghost" style="--o:.12"><span class="mono">06</span><i style="width:21%"></i><i style="width:31%"></i><i style="width:46%"></i></li>
+    <li class="ghost" style="--o:.06"><span class="mono">07</span><i style="width:17%"></i><i style="width:36%"></i><i style="width:38%"></i></li>
+  </ol>
+  <p class="frag-note">A fragment of the collection.</p>
+</section>
+
+<!-- 08 · Visit -->
+<section class="visit" aria-label="Visit the exhibition">
+  <div class="bar mono"><span>[05] Visit</span></div>
+  <h2 class="rest">The rest is<br>at the museum.</h2>
+  <a class="cta" href="#visit" id="visit">Visit the exhibition <span aria-hidden="true">→</span></a>
+  <p class="soon mono">Opening — date to be announced<span class="cursor" aria-hidden="true"></span></p>
+</section>
+<p class="credits mono">Jane Austen: portrait — 19th-century engraving; Sanditon manuscript — King’s College, Cambridge. Photos — Wikimedia Commons: <i>Rondanini Pietà</i>, full view — Sailko; details — Giovanni Dall’Orto. <i>Unfinished Painting</i>, Keith Haring, 1989 — via Wikimedia Commons. Licences as stated on each file page.</p>
+<footer class="site-foot mono"><span>Museum of Unfinished Things</span><a class="ash replay" href="#" onclick="location.reload();return false;">↺ Replay intro</a><span>Design — Inna Buzylo · 2026</span></footer>
+
+<script src="js/room-01-austen.js"></script>
+<script src="js/room-03-haring.js"></script>
+<script src="js/room-02-pieta.js"></script>
+<script src="js/intro-and-reflection.js"></script>
+</body>
+</html>
