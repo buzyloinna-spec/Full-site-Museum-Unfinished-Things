@@ -47,7 +47,7 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased;}
 .copy{position:absolute;left:var(--gut);width:min(44vw,560px);z-index:3;will-change:transform,opacity;}
 .t-label,.t-story{opacity:0;visibility:hidden;}
 .t-intro{bottom:14vh;}
-.t-intro p{font-family:var(--mono);text-transform:uppercase;font-size:clamp(22px,2.3vw,34px);line-height:1.2;letter-spacing:-.02em;margin:10px 0 0;}
+.t-intro p{font-family:var(--sans);font-weight:500;text-transform:uppercase;font-size:clamp(22px,2.3vw,34px);line-height:1.2;letter-spacing:.02em;margin:10px 0 0;}
 .t-label{top:120px;}
 .t-label h2{font-family:var(--display);font-weight:400;font-size:clamp(56px,6.7vw,96px);line-height:.94;letter-spacing:-.03em;margin:0;text-wrap:balance;}
 .t-label .by{font-size:20px;margin:22px 0 28px;}
@@ -70,8 +70,8 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased;}
 .ghostline .mb{color:var(--ash)!important;}
 /* eyebrows above the mono wall texts: a different voice, so the label and the statement do not merge */
 .cap .mono,.conclusion .mono,.t-intro .mono{font-family:var(--sans)!important;font-style:italic;text-transform:none!important;letter-spacing:0!important;font-size:15px!important;font-weight:400;color:var(--ash)!important;}
-.cap.wall p,.t-intro p,.conclusion p{font-size:clamp(22px,2.2vw,32px)!important;line-height:1.25!important;}   /* one size for all three wall texts */
-@media (max-width:720px){ .cap.wall p,.t-intro p,.conclusion p{font-size:19px!important;} }
+.cap.wall p,.t-intro p{font-size:clamp(22px,2.2vw,32px)!important;line-height:1.25!important;}   /* one size for all three wall texts */
+@media (max-width:720px){ .cap.wall p,.t-intro p{font-size:19px!important;} .conclusion p{font-size:17px!important;} }
 /* ---------- Room 00 — Austen (pinned) ---------- */
 #aNotebooks,#aNbCap{display:none!important;}   /* notebooks photo removed */
 .room0-wrap{position:relative;height:560vh;}
@@ -87,23 +87,23 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased;}
 .a-label h2{font-family:var(--display);font-weight:400;font-size:clamp(56px,6.7vw,96px);line-height:.94;letter-spacing:-.03em;margin:10px 0 0;}
 .a-label .by{font-size:20px;margin:18px 0 26px;}
 .a-story>.who{font-size:clamp(22px,1.9vw,28px);letter-spacing:-.01em;}
-.a-story h3{font-weight:600;font-size:clamp(26px,2.4vw,36px);line-height:1.15;letter-spacing:-.02em;margin:12px 0 0;}
-.a-story .lead{font-size:16px;line-height:1.5;margin:12px 0 0;max-width:34em;}
-.a-story .q{font-style:italic;font-size:clamp(20px,1.8vw,26px);line-height:1.2;margin:18px 0 0;}
+.a-story h3{font-weight:600;font-size:clamp(26px,2.4vw,36px);line-height:1.15;letter-spacing:-.02em;margin:0;}
+.a-story .lead{font-size:16.5px;line-height:1.5;margin:12px 0 0;max-width:34em;}
+.a-story .q{font-style:italic;font-size:clamp(22px,2vw,28px);line-height:1.2;margin:18px 0 0;}
 .tw-caret{display:inline-block;width:2px;height:1em;background:var(--orange);margin-left:2px;vertical-align:-.12em;animation:blink 1.06s steps(1) infinite;}
 .nb-cap{position:absolute;z-index:3;opacity:0;visibility:hidden;}
 .kind{margin:0;font-size:18px;display:flex;gap:14px;align-items:baseline;}
 .kind .mono{color:inherit;opacity:.7;}
-.conclusion{position:absolute;left:var(--gut);bottom:var(--gut);z-index:5;background:var(--paper);color:var(--ink);padding:28px 32px 32px;max-width:calc(100% - 2*var(--gut));opacity:0;visibility:hidden;will-change:transform,opacity;}
+.conclusion{position:absolute;left:var(--gut);bottom:var(--gut);z-index:5;background:#fff;color:var(--ink);padding:30px 36px 36px;width:75vw;max-width:calc(100% - 2*var(--gut));box-sizing:border-box;opacity:0;visibility:hidden;will-change:transform,opacity;}
 .conclusion .mono{color:var(--ash);}
 .conclusion .ln{display:block;white-space:nowrap;}
-.conclusion p{font-family:var(--mono);font-weight:400;text-transform:uppercase;font-size:clamp(20px,2.1vw,32px);line-height:1.3;letter-spacing:-.02em;margin:14px 0 0;text-wrap:balance;}
+.conclusion p{font-family:var(--sans);font-weight:400;text-transform:uppercase;font-size:clamp(16px,calc((75vw - 72px) / 33),34px);line-height:1.2;letter-spacing:.02em;margin:14px 0 0;text-wrap:balance;}
 .t-why{top:110px;opacity:0;visibility:hidden;}
-.t-why h3{font-weight:600;font-size:clamp(24px,2.2vw,32px);line-height:1.15;letter-spacing:-.02em;margin:12px 0 18px;}
+.t-why h3{font-weight:600;font-size:clamp(26px,2.4vw,36px);line-height:1.15;letter-spacing:-.02em;margin:12px 0 18px;}
 .why-list{list-style:none;margin:0;padding:0;}
-.why-list li{display:grid;grid-template-columns:36px 1fr;gap:10px;padding:14px 0;border-top:1px solid currentColor;font-size:15px;line-height:1.5;}
+.why-list li{display:grid;grid-template-columns:36px 1fr;gap:10px;padding:14px 0;border-top:1px solid currentColor;font-size:16.5px;line-height:1.5;}
 .why-list li .mono{padding-top:3px;}
-.why-list b{font-weight:500;}
+.why-list b{font-weight:600;}
 /* ---------- Room 02 — Pietà (static for now) ---------- */
 /* ---------- Room 02 — Michelangelo (pinned) ---------- */
 .room2-wrap{position:relative;height:540vh;}
@@ -121,15 +121,15 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased;}
 .cap p{margin:8px 0 0;font-size:clamp(24px,2.2vw,32px);line-height:1.12;letter-spacing:-.02em;}
 .cap .mono{color:var(--ash);}
 .cap.wall{max-width:none;}
-.cap.wall p{font-family:var(--mono);text-transform:uppercase;font-size:clamp(24px,2.4vw,36px);line-height:1.1;letter-spacing:-.02em;margin-top:12px;white-space:nowrap;}
+.cap.wall p{font-family:var(--sans);font-weight:500;text-transform:uppercase;font-size:clamp(24px,2.4vw,36px);line-height:1.1;letter-spacing:.02em;margin-top:12px;white-space:nowrap;}
 .room2 .copy{top:120px;}
 .t2-label,.t2-story{opacity:0;visibility:hidden;}
 .t2-label h2{font-family:var(--display);font-weight:400;font-size:clamp(56px,6.7vw,96px);line-height:.94;letter-spacing:-.03em;margin:0;text-wrap:balance;}
 .t2-label .by,.t2-story .by{font-size:20px;margin:22px 0 28px;}
-.t2-story h3{font-weight:600;font-size:clamp(28px,2.6vw,38px);line-height:1.15;letter-spacing:-.02em;margin:0;}
+.t2-story h3{font-weight:600;font-size:clamp(26px,2.4vw,36px);line-height:1.15;letter-spacing:-.02em;margin:0;}
 .t2-story .nw{white-space:nowrap;}
-.t2-story .lead{font-size:17px;line-height:1.5;max-width:32em;margin:16px 0 0;}
-.t2-story .q{font-style:italic;font-size:clamp(24px,2.2vw,32px);line-height:1.15;margin:28px 0 0;}
+.t2-story .lead{font-size:16.5px;line-height:1.5;max-width:32em;margin:16px 0 0;}
+.t2-story .q{font-style:italic;font-size:clamp(22px,2vw,28px);line-height:1.2;margin:28px 0 0;}
 .detail{position:absolute;z-index:3;width:clamp(240px,24vw,340px);aspect-ratio:4/3;background:#2a2926 url("../images/pieta-first.jpg") no-repeat;background-size:cover;background-position:40% 60%;filter:brightness(1.3) contrast(1.06);opacity:0;visibility:hidden;will-change:transform,opacity;}
 .detail-cap{position:absolute;z-index:3;opacity:0;visibility:hidden;font-size:10px;line-height:1.7;letter-spacing:.04em;white-space:nowrap;}
 
@@ -137,7 +137,7 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased;}
 .intro{position:relative;}
 /* Slogan: letters surface out of the fog in random order, very slowly, and leave the same way */
 .slogan{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2.2em;z-index:2;pointer-events:none;
-  font-family:var(--mono);font-weight:400;text-transform:uppercase;font-size:clamp(18px,2vw,30px);letter-spacing:-.02em;line-height:1.3;text-align:center;padding-inline:var(--gut);}
+  font-family:var(--sans);font-weight:400;text-transform:uppercase;font-size:clamp(18px,2vw,30px);letter-spacing:.02em;line-height:1.3;text-align:center;padding-inline:var(--gut);}
 .slogan .sl{margin:0;}
 .slogan .w{display:inline-block;white-space:nowrap;}
 .slogan .ch{display:inline-block;opacity:0;filter:blur(9px);transform:translateY(var(--y,0));
@@ -255,15 +255,15 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased;}
   .rest{font-size:52px;margin:8vh 0 5vh;}
   .cta{padding:20px 22px;font-size:16px;}
   .site-foot{flex-direction:column;gap:10px;}
-  .slogan{font-size:14px;letter-spacing:-.03em;gap:1.6em;}
+  .slogan{font-size:15px;letter-spacing:.02em;gap:1.6em;}
   .room2 .bar span:nth-child(2){display:none;}
   .coll li.ghost i+i{display:none;}
   .a-copy{width:auto;right:var(--gut);}
   .wall-d{font-size:34px;} .a-copy .sub{font-size:16px;}
   .a-label h2{font-size:48px;} .a-label .by{font-size:17px;margin:12px 0 16px;}
-  .a-story h3{font-size:22px;} .a-story .lead{font-size:13.5px;line-height:1.42;margin-top:8px;} .a-story .q{font-size:17px;margin-top:10px;}
+  .a-story h3{font-size:22px;} .a-story .lead{font-size:14px;line-height:1.45;margin-top:8px;} .a-story .q{font-size:18px;margin-top:10px;}
   .nb,.nb-cap{display:none!important;}
-  .conclusion{padding:18px 20px 22px;} .conclusion p{font-size:17px;} .conclusion .ln{white-space:normal;display:inline;}
-  .t-why{top:auto;bottom:4vh;} .t-why h3{font-size:20px;margin-bottom:8px;} .why-list li{font-size:13px;line-height:1.4;padding:8px 0;}
+  .conclusion{padding:18px 20px 22px;width:auto;right:var(--gut);} .conclusion p{font-size:17px;letter-spacing:.02em;line-height:1.15;} .conclusion .ln{white-space:normal;display:inline;}
+  .t-why{top:auto;bottom:4vh;} .t-why h3{font-size:22px;margin-bottom:8px;} .why-list li{font-size:14px;line-height:1.45;padding:8px 0;}
 }
 @media (prefers-reduced-motion:reduce){ .cursor{animation:none;} .room-wrap{height:auto;} .room{position:relative;} .band{display:none;} .room2-wrap{height:auto;} .room2{position:relative;} }
