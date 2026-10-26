@@ -147,7 +147,7 @@
 </section></div>
 
 <!-- 04 · This is not the museum (orange 40 %) -->
-<section class="orange list-sec" aria-label="Three of many">
+<section class="orange list-sec" id="collection" aria-label="Three of many">
   <div class="bar mono"><span>[04] Collection</span></div>
   <h2 class="two">Three of many.</h2>
   <p class="two-sub">Each story is its own kind of unfinished.</p>
@@ -165,7 +165,7 @@
 </section>
 
 <!-- 08 · Visit -->
-<section class="visit" aria-label="Visit the exhibition">
+<section class="visit" id="visit-sec" aria-label="Visit the exhibition">
   <div class="bar mono"><span>[05] Visit</span></div>
   <h2 class="rest">The rest is<br>at the museum.</h2>
   <a class="cta" href="#visit" id="visit">Visit the exhibition <span aria-hidden="true">→</span></a>
@@ -174,9 +174,20 @@
 <p class="credits mono">Jane Austen: portrait — 19th-century engraving; Sanditon manuscript — King’s College, Cambridge. Photos — Wikimedia Commons: <i>Rondanini Pietà</i>, full view — Sailko; details — Giovanni Dall’Orto. <i>Unfinished Painting</i>, Keith Haring, 1989 — via Wikimedia Commons. Licences as stated on each file page.</p>
 <footer class="site-foot mono"><span>Museum of Unfinished Things</span><a class="ash replay" href="#" onclick="location.reload();return false;">↺ Replay intro</a><span>Design — Inna Buzylo · 2026</span></footer>
 
+<nav class="sidenav" id="sidenav" aria-label="Rooms">
+  <a href="#intro"><span class="lb">Opening</span><i></i></a>
+  <a href="#wrap00"><span class="lb">01 · Jane Austen</span><i></i></a>
+  <a href="#wrap02"><span class="lb">02 · Michelangelo</span><i></i></a>
+  <a href="#wrap01"><span class="lb">03 · Keith Haring</span><i></i></a>
+  <a href="#wrapWhy"><span class="lb">Reflection</span><i></i></a>
+  <a href="#collection"><span class="lb">Collection</span><i></i></a>
+  <a href="#visit-sec"><span class="lb">Visit</span><i></i></a>
+</nav>
+
 <script src="js/room-01-austen.js"></script>
 <script src="js/room-03-haring.js"></script>
 <script src="js/room-02-pieta.js"></script>
 <script src="js/intro-and-reflection.js"></script>
+<script src="js/side-nav.js"></script>
 </body>
 </html>
