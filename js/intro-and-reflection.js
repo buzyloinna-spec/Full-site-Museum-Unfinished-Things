@@ -111,8 +111,10 @@
     q.style.opacity=0;M.forEach(m=>{m.style.opacity=0;});drawAns(10);lock(false);
   }
   skipB.addEventListener('click',finish);
+  window.__stage={playing:()=>state==='playing',stop:finish,replay:()=>{cancelAnimationFrame(raf);state='idle';reset();onScroll();}};
   function onScroll(){
     if(state==='playing')return;
+    if(window.__navJump){ if(state==='idle'&&prog()>=TRIG)finish(); return; }   // side navigation passes over the stage without starting it
     const p=prog(),r=wrap.getBoundingClientRect();
     if(state==='idle'&&p>=TRIG)play();
     else if(state==='done'&&r.top>H*0.6){state='idle';reset();}      // scrolled back above — it can play again
